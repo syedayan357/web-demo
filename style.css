@@ -4,12 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body
 {
     font-family: sans-serif;
 }
 
+/*-------nav-bar------*/
 #nav-bar
 {
     position: sticky;
@@ -18,49 +18,38 @@ body
 }
 .navbar
 {
-    /*-------background-image: linear-gradient(to right, #a51,#5f1744);-------*/
-    background-image: linear-gradient(to right, #edc30b,#c67c7c);
+    background-color: #540b0e;
     padding: 0 !important;
 }
-
-/*------.navbar-brand image
-{
-    width: 50px;
-    height: auto;    
-}
---------*/
-
 .navbar-nav li
 {
     padding: 5px 10px;
 }
 .navbar-nav li a
 {
-    color: antiquewhite !important;
+    
+    color: rgb(240, 209, 38) !important;
     font-family: cursive;
-    font-weight: 600;
+    font-weight: 100;
 }
 .fa-bars
 {
-    color: #f90b0b;
-    font-size: 30px !important; 
+    color: gold;
+    font-size: 60px !important; 
 }
 .navbar-toggler
 {
     outline: none !important;
 }
-/*----------------banner section------*/
 
+/*----------banner section------*/
 #banner
 {
-    /*--------background-image: linear-gradient(to right, #a517ba,#5f1782);------*/
-    /*------background-image: linear-gradient(to right, #a5a5a5,#5f175f);--------*/
-    /*-----background-image: linear-gradient(to right, #a51, #555);-----*/
-    /*-----background-image: linear-gradient(to right, #fff3b0,#ffffff);----*/
-    background-image: linear-gradient(TO right, #9E2A2B,#540B0E);
+    background-color: #9e2a2b; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffd700;
-    padding-top: 5%;
+    padding-top: 1%;
+    
 }
 .promo-title
 {
@@ -88,13 +77,12 @@ body
 
 #welcome
 {
-    padding: 10px 0;
+    padding: 0;
 }
 .welcome-img
 {
     width: 100%;
     height: 100%;
-    margin-top: 20px;
 }
 .welcome
 {
@@ -109,10 +97,11 @@ body
 .welcome-title
 {
     padding: 0%;
-    margin-top: 100%;
+    margin-top: 0;
+
     
 }
-.welcome-title::before
+/*------------.welcome-title::before
 {
     content: '';
     background: #edc30b;
@@ -121,7 +110,7 @@ body
     margin-left: auto;
     margin-right: auto;
     display: block;
-    transform: translateY(83px);
+    transform: translateY(63px);
 }
 .title::before
 {
@@ -133,19 +122,17 @@ body
     margin-right: auto;
     display: block;
     transform: translateY(63px);
-}
+}----------*/
 
 /*------Events section------*/
-.events_title
-{
-    margin-top: 60px;
-    margin-bottom: 35px;
+#event{
+    padding: 60px;
 }
-
 .trending-img
 {
     align-items: center;
     position: relative;
+    margin-top: 20px;
     margin-bottom: 50px;
     width: 90%;
 }
@@ -159,9 +146,9 @@ body
     padding: 10px 0;
     outline: none;
     border: 0;
-    border-radius: 2px;
+    border-radius: 20px;
     position: absolute;
-    background: #fff;
+    background: #a18888;
     left: 50%;
     bottom: 0;
     transform: translate(-50%,0);
@@ -185,7 +172,7 @@ body
     opacity: 0;
     transition: .5s;
 }
-.event-row
+ .event-row
 {
     position: relative;
     align-items: center;
@@ -203,7 +190,7 @@ body
     width: 50%;
 }
 
-/*--------services section-------*/
+/*--------services section-------
 
 #services
 {
@@ -224,6 +211,16 @@ body
     margin-top: 25px;
     text-transform: uppercase;
 }
+#services .btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #a517a5, #575759);
+}
+--------*/
+/*----------title line--*/
 .title::before
 {
     content: ' ';
@@ -235,31 +232,18 @@ body
     display: block;
     transform: translateY(55px);
 }
-#services .btn-primary
-{
-    box-shadow: none;
-    padding: 8px 25px;
-    border: none;
-    border-radius: 20px;
-    background-image: linear-gradient(to right, #a517a5, #575759);
-}
-/*-------testi-----*/
+
+/*-------testi-----
 .tesi-box
 {
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
 }
-
 .stars
 {
-  
-    
     align-items: center;
-    
-    
     justify-content: center;
-    
     color: gold;
 }
 .testi-body
@@ -292,9 +276,9 @@ body
     font: normal normal normal 20px / 30px Cinzel;
     letter-spacing: 0;
     color: #dc640e;
-}
+}-------*/
 
-/*--------testimonials1--------*/
+/*--------testimonials1--------
 
 .banner-container
 {
@@ -376,7 +360,7 @@ h2{
     padding-right: 15px;
     padding-left: 15px;
     box-sizing: inherit;
-}
+}----*/
 
 
 /*-------steps-to-book-an-event section --------
@@ -420,17 +404,18 @@ h2{
     overflow-x: hidden;
     text-align: left;
 }
+/*------------title for all------*/
 .title
 {
     text-align: center;
-    font: normal normal normal 40px /40px Cinzel;
+    font: normal normal normal 30px /40px Cinzel;
     color: #000;
     letter-spacing: 0;
     display: flex;
     flex-direction: column;
     text-decoration: uppercase;
     width: max-content;
-    margin: 10px auto 50px;
+    margin: 20px auto 50px;
     align-items: center;
 }
 .sbtae-row
@@ -438,7 +423,7 @@ h2{
     
     display: flex;
     flex-wrap: wrap;
-    gap: 20px 70px;
+    gap: 10px 10px;
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
@@ -449,24 +434,13 @@ h2{
 }
 .stbae-box
 {
-    border: 1px solid rgb(224, 28, 113);
+    border: 3px solid gold;
     width: 100%;
     aspect-ratio: 2;
     padding: 10px;
-    border-radius: 40px;
-    max-width: 500px;
-    background-color: #fff;
-}
-.stbae-box .col-md-5
-{
-    box-sizing: 0;
-}
-.stbae-box .col-lg-4 .col-md-12 .col-12
-{
-    max-width: 500px;
-}
-.col-12{
-    flex: 100%;
+    border-radius: 90px;
+    max-width: 400px;
+    background-color: #9e2a2b;
 }
 h2 {
     margin-block-start: 0.83em;
@@ -523,7 +497,7 @@ h2 {
 
 
 
-/*--------StepToBookAnEvent section------*/
+/*--------StepToBookAnEvent section------
 .StepToBookAnEvent_section
 {
     margin: 20px auto;
@@ -573,12 +547,12 @@ h2 {
     max-width: 10px;
 
 }
-/*--------.row
+.row
 {
     display: flex;
     margin-right: -15px;
     margin-left: -15px;
-}-------*/
+}
 .StepToBookAnEvent_section
 .StepToBookAnEvent_wrapper
 .StepToBookAnEvent_item
@@ -658,11 +632,11 @@ h2
 div{
     display: block;
     unicode-bidi: isolate;
-}
+}--------*/
 
 
 
-/*------------testimonials-----------*/
+/*------------testimonials-----------
 
 #testimonials
 {
@@ -684,7 +658,7 @@ div{
 .user-details
 {
     display: in;
-}
+}--------*/
 
 /*-------social-media section--------*/
 #social-media
@@ -713,9 +687,8 @@ div{
 
 #footer
 {
-    /*-------background-image: linear-gradient(to right, #a51, #555);------*/
-    background-image: linear-gradient(TO right, #9E2A2B,#540B0E);
-    color: #fff;
+    background-color: #9e2a2b;
+    color: black;
 }
 .footer-img
 {
@@ -723,14 +696,19 @@ div{
 }
 .footer-box
 {
-    padding: 20px;
+    
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    color: rgb(25, 23, 9);
+    font-family: cursive;
 }
 .footer-box img
 {
     width: 120px;
-    margin-bottom: 20px;   
+    margin-top: 80px;   
 }
-.footer-box .fa
+/*-------.footer-box .fa
 {
     margin-right: 8px;
     font-size: 25px;
@@ -739,13 +717,13 @@ div{
     text-align: center;
     padding-top: 7px;
     border-radius: 2px;
-    background-image: linear-gradient(to right, #aaa, #5f175f);
-}
+    background-color: #0e1005;
+}-------*/
 .footer-box .form-control
 {
     box-shadow: none !important;
     border: none;
-    border-radius: 0;
+    border-radius: 100px;
     margin-top: 25px;
     max-width: 250px;
 }
@@ -753,19 +731,29 @@ div{
 {
     box-shadow: none !important;
     border: none;
-    border-radius: 0;
+    border-radius: 10px;
     margin-top: 30px;
-    background-image: linear-gradient(to right, #a5a5a5,#5f175f);
+    background-color: rgb(218, 196, 76);
 }
-hr
-{
-    background-color: #fff;
+.abc{
+    width: max-content;
+    color: rgb(19, 19, 16);
+    font: normal normal normal 12px / 16px Cinzel;
+    box-sizing: inherit;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
 }
+
+
 .copyright
 {
     margin-bottom: 0;
     padding-bottom: 20px;
     text-align: center;
+    font-style: italic;
 }
 
 
